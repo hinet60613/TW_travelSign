@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>旅遊安全警示</title>
+	<link rel="stylesheet" type="text/css" href="jquery-jvectormap-2.0.2.css" media="screen" />
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="jquery-jvectormap-2.0.2.min.js"></script>
+	<script src="jquery-jvectormap-world-mill-en.js"></script>
+</head>
+<body>
+	<div id="world-map" style="width:100%; height:80%;"></div>
+	<script>
+		function status(str){
+			var enumerate = ["SAFE", "REMIND", "WARNING", "CAUTION","DANGER"];
+			return enumerate.indexOf(str);
+		};
+		var travelSign = {
+			"TW": status("SAFE"),
+			"AU": status("WARNING"),
+			"BD": status("WARNING"),
+			"BT": status("REMIND"),
+			"BN": status("REMIND"),
+			"KH": status("REMIND"),
+			"KP": status("CAUTION"),
+			"NP": status("DANGER"),
+			"AF": status("DANGER"),
+			"IQ": status("DANGER"),
+			"AE": status("REMIND"),
+			"YE": status("DANGER"),
+			"ES": status("WARNING"),
+			"VE": status("CAUTION")
+		};
+		$(function(){
+			$('#world-map').vectorMap({
+				map: 'world_mill_en',
+				series: {
+					regions: [{
+						values: travelSign,
+						scale: ['#55DD55', '#AAAAAA', '#DDDD00', '#FFA500', '#DD0000'],
+						normalizeFunction: 'linear',
+						min: 0,
+						max: 4
+					}]
+				}
+			});
+		});
+	</script>
+</body>
+</html>
