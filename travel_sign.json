@@ -1,0 +1,92 @@
+{
+  "africa": {},
+  "asia": {
+    "TW": {
+      "sign": "SAFE"
+    },
+    "BD": {
+      "sign": "WARNING"
+    },
+    "BT": {
+      "sign": "REMIND"
+    },
+    "BN": {
+      "sign": "REMIND"
+    },
+    "KN": {
+      "sign": "REMIND"
+    },
+    "IN": {
+      "sign": "REMIND",
+      "region": {
+        "map": "in",
+        "sign": {}
+      }
+    },
+    "ID": {
+      "sign": "WARNING"
+    },
+    "KP": {
+      "sign": "CAUTION"
+    },
+    "KR": {
+      "sign": "REMIND"
+    },
+    "LA": {
+      "sign": "REMIND"
+    },
+    "MY": {
+      "sign": "REMIND",
+      "region": {}
+    },
+    "MM": {
+      "sign": "CAUTION",
+      "region": {}
+    },
+    "NP": {
+      "sign": "WARNING"
+    },
+    "PH": {
+      "sign": "REMIND"
+    }
+  },
+  "europe": {},
+  "north_america": {},
+  "oceania": {
+    "AU": {
+      "sign": "WARNING",
+      "region": {
+        "map": "au",
+        "sign": {
+          "AU-QLD": "WARNING",
+          "AU-NSW": "WARNING",
+          "AU-VIC": "WARNING",
+          "AU-SA": "WARNING",
+          "AU-TAS": "WARNING"
+        }
+      }
+    },
+    "KI": {
+      "sign": "REMIND"
+    },
+    "NC": {
+      "sign": "WARNING"
+    },
+    "NZ": {
+      "sign": "SAFE",
+      "region": {
+        "map": "nz",
+        "sign": {
+          "NZ-AUK": "REMIND"
+        }
+      }
+    },
+    "PG": {
+      "sign": "WARNING"
+    },
+    "PF": {
+      "sign": "REMIND"
+    }
+  },
+  "south_america": {}
+}
